@@ -1,4 +1,8 @@
 import React from 'react';
+import facebook from '../assets/facebook.svg';
+import instagram from '../assets/instagram.svg';
+import linkedin from '../assets/linkedin.svg';
+import logo from '../assets/valyu-logo.svg';
 
 export default function Footer() {
   return (
@@ -7,7 +11,7 @@ export default function Footer() {
         {/* Logo & Tagline */}
         <div className="md:col-span-1">
           <div className="mb-4">
-            <img src="/src/assets/valyu-logo.svg" alt="Valyu Logistics" className="h-10" />
+            <img src={logo} alt="Valyu Logistics" className="h-10" />
           </div>
           <p className="text-sm text-gray-400">
             From pit to port. Delivering logistics excellence across the SADC region.
@@ -49,13 +53,13 @@ export default function Footer() {
       <div className="mt-12 border-t border-gray-700 pt-6 text-sm text-gray-500 text-center">
         <div className="flex items-center justify-center space-x-4 mb-2">
             <a href="https://www.facebook.com/people/Valyu-Logistics-Pty-Ltd/61556658675655/" target="_blank" rel="noopener noreferrer">
-            <img src="/src/assets/facebook.svg" alt="Facebook" className="h-4 w-4 hover:opacity-80" />
+            <img src={facebook} alt="Facebook" className="h-4 w-4 hover:opacity-80" />
             </a>
             <a href="https://www.instagram.com/valyu_logistics/" target="_blank" rel="noopener noreferrer">
-            <img src="/src/assets/instagram.svg" alt="Instagram" className="h-4 w-4 hover:opacity-80" />
+            <img src={instagram} alt="Instagram" className="h-4 w-4 hover:opacity-80" />
             </a>
             <a href="https://www.linkedin.com/company/valyu-logistics-pty-ltd/" target="_blank" rel="noopener noreferrer">
-            <img src="/src/assets/linkedin.svg" alt="LinkedIn" className="h-4 w-4 hover:opacity-80" />
+            <img src={linkedin} alt="LinkedIn" className="h-4 w-4 hover:opacity-80" />
             </a>
         </div>
         © {new Date().getFullYear()} Valyu Logistics. All rights reserved.
