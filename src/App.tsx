@@ -1,15 +1,44 @@
-import { useStoryblok } from "@storyblok/react";
+import React from 'react';
+import { useStoryblok, StoryblokComponent } from '@storyblok/react';
+import HeaderNavigation from './components/HeaderNavigation';
+import Hero from './components/Hero';
+import heroImage from './assets/hero2.jpg';
+import WhyUs from './components/WhyUs';
+import Services from './components/Services';
+import Banner from './components/Banner';
+import Footer from './components/Footer';
+import About from './components/About';
 
-function App() {
-  const story = useStoryblok("home", { version: "draft" });
+export default function App() {
+  const story = useStoryblok('home', {
+    version: 'draft',
+    resolve_relations: [],
+  });
 
-  if (!story) return <div>Loading...</div>;
+  const navItems = [
+    { label: 'About', href: '/about' },
+    { label: 'Contact', href: '/contact' },
+    { label: 'Services', href: '/services' },
+  ];
+
+  if (!story?.content) return <div>Loading...</div>;
 
   return (
-    <div>
-      <h1>{story.content.headline}</h1>
+    <div className="max-w-[1530px] mx-auto">
+      <HeaderNavigation navItems={navItems} />
+      <Hero
+        title="From Pit to Port"
+        subtitle="Seamless cross-border transport and logistics spanning the entire SADC region and supply chain."
+        ctaLabel="Get Started"
+        ctaHref="/get-started"
+        imageSrc={heroImage}
+      />
+      <WhyUs />
+      <About />
+      <Services />
+      <Banner />
+      <Footer />
+      <StoryblokComponent blok={story.content} />
     </div>
   );
 }
-
-export default App;

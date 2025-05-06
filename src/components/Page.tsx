@@ -1,11 +1,18 @@
-import { storyblokEditable } from "@storyblok/react";
+import React from 'react';
+import { storyblokEditable } from '@storyblok/react';
 
-const Page = ({ blok }: any) => {
+interface PageProps {
+  blok: {
+    _uid: string;
+    component: string;
+    title: string;
+  };
+}
+
+export default function Page({ blok }: PageProps) {
   return (
     <main {...storyblokEditable(blok)}>
-      <h1>{blok.headline}</h1>
+      <h1>{blok.title}</h1>
     </main>
   );
-};
-
-export default Page;
+}
