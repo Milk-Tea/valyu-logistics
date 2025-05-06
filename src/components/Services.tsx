@@ -1,4 +1,8 @@
 import React from 'react';
+import road from '../assets/road-freight.jpg';
+import sea from '../assets/sea-freight.jpeg';
+import customs from '../assets/customs-clearance.jpg';
+import supply from '../assets/supply-chain.jpg';
 
 interface Service {
   title: string;
@@ -9,22 +13,22 @@ interface Service {
 const services: Service[] = [
   {
     title: 'Road Freight',
-    image: '/src/assets/road-freight.jpg',
+    image: road,
     href: '/services/road-freight',
   },
   {
     title: 'Sea Freight',
-    image: '/src/assets/sea-freight.jpeg',
+    image: sea,
     href: '/services/sea-freight',
   },
   {
     title: 'Customs Clearance',
-    image: '/src/assets/customs-clearance.jpg',
+    image: customs,
     href: '/services/customs-clearance',
   },
   {
     title: 'Supply Chain Management',
-    image: '/src/assets/supply-chain.jpg',
+    image: supply,
     href: '/services/supply-chain',
   },
 ];

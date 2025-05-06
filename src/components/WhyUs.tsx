@@ -1,4 +1,7 @@
 import React from 'react';
+import transport from '../assets/transport.jpg';
+import warehousing from '../assets/warehousing.jpg';
+import supplychain from '../assets/supplychain.jpg';
 
 interface Feature {
   title: string;
@@ -10,17 +13,17 @@ const features: Feature[] = [
   {
     title: 'Experience-first Approach',
     description: 'We don’t just serve customers, we craft experiences that are positive, personalized, and unforgettable.',
-    image: '/src/assets/transport.jpg',
+    image: transport,
   },
   {
     title: 'Impact that Lasts',
     description: 'We go beyond transactions. Our work positively shapes the lives of our customers and empowers our team to thrive.',
-    image: '/src/assets/warehousing.jpg',
+    image: warehousing,
   },
   {
     title: 'Trust-built Teamwork',
     description: 'Radical transparency, fairness, and collaboration are our core, we get it done right, and we get it done together.',
-    image: '/src/assets/supplychain.jpg',
+    image: supplychain,
   },
 ];
 
