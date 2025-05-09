@@ -5,7 +5,7 @@ import About from './components/About';
 import Services from './components/Services';
 import Banner from './components/Banner';
 import Layout from './components/Layout';
-import heroImage from './assets/hero2.jpg';
+import heroImage from '../assets/hero2.jpg';
 
 export default function App() {
   return (

@@ -5,7 +5,7 @@
   "type": "module",
   "scripts": {
     "dev": "bun vite",
-    "build": "bun vite build",
+    "build": "bun vite build --mode production",
     "predeploy": "bun run build",
     "deploy": "gh-pages -d dist"
   },
