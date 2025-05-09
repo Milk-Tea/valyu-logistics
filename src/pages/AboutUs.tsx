@@ -25,7 +25,7 @@ export default function AboutPage() {
         imageSrc={heroImage}
       />
       <section className="flex flex-col lg:flex-row bg-gray-50 py-20 px-4 lg:px-12 gap-8 items-center">
-        <div className="w-[70%]">
+        <div className="w-full lg:w-[70%]">
             <span className="inline-block text-sm font-medium text-[#1D6295] border border-[#1D6295] rounded-full px-4 py-1 mb-6">
                 FOUNDED WITH A PURPOSE
             </span>
