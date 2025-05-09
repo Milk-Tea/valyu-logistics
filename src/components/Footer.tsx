@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import facebook from '../assets/facebook.svg';
 import instagram from '../assets/instagram.svg';
 import linkedin from '../assets/linkedin.svg';
@@ -22,9 +23,9 @@ export default function Footer() {
         <div>
           <h4 className="text-sm font-semibold mb-4">Company</h4>
           <ul className="space-y-2 text-sm text-gray-300">
-            <li><a href="/about" className="hover:text-white">About</a></li>
-            <li><a href="/services" className="hover:text-white">Services</a></li>
-            <li><a href="/contact" className="hover:text-white">Contact</a></li>
+            <li><Link to="/about" className="hover:text-white">About</Link></li>
+            <li><Link to="/services" className="hover:text-white">Services</Link></li>
+            <li><Link to="/contact" className="hover:text-white">Contact</Link></li>
           </ul>
         </div>
 
@@ -32,10 +33,10 @@ export default function Footer() {
         <div>
           <h4 className="text-sm font-semibold mb-4">Solutions</h4>
           <ul className="space-y-2 text-sm text-gray-300">
-            <li><a href="/services/road-freight" className="hover:text-white">Road Freight</a></li>
-            <li><a href="/services/sea-freight" className="hover:text-white">Sea Freight</a></li>
-            <li><a href="/services/warehousing" className="hover:text-white">Warehousing</a></li>
-            <li><a href="/services/supply-chain" className="hover:text-white">Supply Chain</a></li>
+            <li><Link to="/services/road-freight" className="hover:text-white">Road Freight</Link></li>
+            <li><Link to="/services/sea-freight" className="hover:text-white">Sea Freight</Link></li>
+            <li><Link to="/services/warehousing" className="hover:text-white">Warehousing</Link></li>
+            <li><Link to="/services/supply-chain" className="hover:text-white">Supply Chain</Link></li>
           </ul>
         </div>
 
@@ -43,8 +44,18 @@ export default function Footer() {
         <div>
           <h4 className="text-sm font-semibold mb-4">Contact</h4>
           <ul className="space-y-2 text-sm text-gray-300">
-            <li>Email: <a href="mailto:info@valyulogistics.co.za" className="hover:text-white">info@valyulogistics.co.za</a></li>
-            <li>Phone: <a href="tel:+2776 2828 086" className="hover:text-white">+2776 2828 086</a></li>
+            <li>
+              Email:{' '}
+              <a href="mailto:info@valyulogistics.co.za" className="hover:text-white">
+                info@valyulogistics.co.za
+              </a>
+            </li>
+            <li>
+              Phone:{' '}
+              <a href="tel:+27762828086" className="hover:text-white">
+                +27 76 2828 086
+              </a>
+            </li>
           </ul>
         </div>
       </div>
@@ -52,19 +63,30 @@ export default function Footer() {
       {/* Bottom Bar */}
       <div className="mt-12 border-t border-gray-700 pt-6 text-sm text-gray-500 text-center">
         <div className="flex items-center justify-center space-x-4 mb-2">
-            <a href="https://www.facebook.com/people/Valyu-Logistics-Pty-Ltd/61556658675655/" target="_blank" rel="noopener noreferrer">
+          <a
+            href="https://www.facebook.com/people/Valyu-Logistics-Pty-Ltd/61556658675655/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
             <img src={facebook} alt="Facebook" className="h-4 w-4 hover:opacity-80" />
-            </a>
-            <a href="https://www.instagram.com/valyu_logistics/" target="_blank" rel="noopener noreferrer">
+          </a>
+          <a
+            href="https://www.instagram.com/valyu_logistics/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
             <img src={instagram} alt="Instagram" className="h-4 w-4 hover:opacity-80" />
-            </a>
-            <a href="https://www.linkedin.com/company/valyu-logistics-pty-ltd/" target="_blank" rel="noopener noreferrer">
+          </a>
+          <a
+            href="https://www.linkedin.com/company/valyu-logistics-pty-ltd/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
             <img src={linkedin} alt="LinkedIn" className="h-4 w-4 hover:opacity-80" />
-            </a>
+          </a>
         </div>
         © {new Date().getFullYear()} Valyu Logistics. All rights reserved.
-    </div>
-
+      </div>
     </footer>
   );
 }

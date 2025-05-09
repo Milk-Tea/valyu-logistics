@@ -6,6 +6,7 @@
   "scripts": {
     "dev": "bun vite",
     "build": "bun vite build --mode production",
+    "postbuild": "cp dist/index.html dist/404.html",
     "predeploy": "bun run build",
     "deploy": "gh-pages -d dist"
   },
