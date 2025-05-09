@@ -20,7 +20,7 @@ const Hero: React.FC<HeroProps> = ({ title, subtitle, ctaLabel, ctaHref, imageSr
       )}
       <div className="relative z-10 h-full w-full bg-black/30 flex items-center px-4 md:px-12">
         <div className="text-white max-w-2xl mt-[113px]">
-          <h1 className="text-4xl md:text-5xl font-extrabold mb-4">{title}</h1>
+          <h1 className="w-4/5 text-4xl md:text-5xl font-extrabold mb-4">{title}</h1>
           {subtitle && (
             <p className="text-lg md:text-xl text-white mb-6 font-montserrat">{subtitle}</p>
           )}

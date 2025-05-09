@@ -7,7 +7,8 @@ export default {
             montserrat: ['Montserrat', 'sans-serif'],
             playfair: ['Playfair Display', 'serif'],
             }
-        } 
+        },
+        scrollBehavior: ['responsive'], // optional
       },
     plugins: [],
   };

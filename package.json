@@ -12,8 +12,10 @@
   "dependencies": {
     "@storyblok/js": "^3.4.0",
     "@storyblok/react": "^4.6.1",
+    "aos": "^2.3.4",
     "react": "^19.0.0",
-    "react-dom": "^19.0.0"
+    "react-dom": "^19.0.0",
+    "react-router-dom": "^7.5.3"
   },
   "devDependencies": {
     "@eslint/js": "^9.22.0",
