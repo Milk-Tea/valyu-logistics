@@ -1,4 +1,3 @@
-import React from 'react';
 import cosco from '../assets/logos/cosco.svg';
 import maersk from '../assets/logos/maersk.svg';
 import msc from '../assets/logos/msc.svg';
