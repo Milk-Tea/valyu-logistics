@@ -12,7 +12,7 @@ import Teaser from './components/Teaser';
 import About from './pages/AboutUs';
 
 storyblokInit({
-  accessToken: 'QPWtJhVx2TMZ4d4tLHGlLwtt',
+  accessToken: import.meta.env.VITE_STORYBLOK_TOKEN,
   use: [apiPlugin],
   components: {
     page: Page,
@@ -22,7 +22,7 @@ storyblokInit({
 
 ReactDOM.createRoot(document.getElementById('root')!).render(
   <React.StrictMode>
-    <BrowserRouter>
+    <BrowserRouter basename="/valyu-logistics">
       <Routes>
         <Route path="/" element={<App />} />
         <Route path="/about" element={<About />} />
